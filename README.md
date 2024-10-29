@@ -1,6 +1,6 @@
 # HEWI - Electronic Wind Instrument
 
-HEWI (Holman's Electronic Wind Instrument) es un proyecto DIY de un instrumento de viento electrónico, diseñado para Makers y músicos que buscan explorar el potencial de la música digital con un dispositivo portátil. Este proyecto utiliza el microcontrolador ESP32 y varias bibliotecas personalizadas, y está equipado con sensores de soplido y teclas capacitivas para una experiencia de interpretación intuitiva.
+HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrónico, diseñado para Makers y músicos y entuciastas que buscan explorar su potencial creativo, modificando, programando o personalizando un su propio EWI. Este proyecto esta basado en el microcontrolador ESP32 y para el se han implementado varias bibliotecas personalizadas puedes encontrar mas informacion en su pagina oficial <a href=https://sites.google.com/view/hewi-instrument>HEWI</a>.
 
 # Características
 
