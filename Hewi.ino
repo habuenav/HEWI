@@ -685,64 +685,79 @@ void funcMenu()
   // Opción "Salir" en el submenú "Configuración"
   else if(enter && Menu.Select(8, "Conf")) {  Menu.Root();  }
 }
-//-----------------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------
+// Función de configuración (setup) del sistema, inicializa y configura los periféricos y establece las preferencias iniciales
 void setup()
 {
- // Serial.begin(115200); // Start serial communication
+  // Configuración del servidor BLE MIDI para manejar eventos de conexión y desconexión
   BLEMidiServer.setOnConnectCallback([]()
   {
-    bleConnected = true;
-    printLine("Connected");
-    Menu.Message("Bluetooth| |Estado|Conectado", CENTER, MSG_TIME);
+    bleConnected = true;                         // Indica que BLE está conectado
+    printLine("Connected");                      // Imprime el estado en la consola
+    Menu.Message("Bluetooth| |Estado|Conectado", CENTER, MSG_TIME); // Muestra un mensaje en pantalla
   });
   BLEMidiServer.setOnDisconnectCallback([]()
   {
-    bleConnected = false;
-    printLine("Disconnected");
-    Menu.Message("Bluetooth| |Estado|Desconectado", CENTER, MSG_TIME);
+    bleConnected = false;                        // Indica que BLE está desconectado
+    printLine("Disconnected");                   // Imprime el estado en la consola
+    Menu.Message("Bluetooth| |Estado|Desconectado", CENTER, MSG_TIME); // Muestra un mensaje en pantalla
   });
-  display.begin(); //initialize display
-  Menu.Message(String(NOMBRE) + "|Iniciando|By: Holman|2024", CENTER, 1);
-  Wire.begin();
-  while(mpu.begin()) {}
-  mpu.calcOffsets(true, true); // gyro and accelero
-  preferencias.begin("Hewi", false);
-  setNoteMap();
-  initSynth(26, 25, 22);
-  setMenuInstrumentos();
-  //setDelayNota(10); 
-  setFadeIn(10); 
-  myBreath.setResistance(1); // Nivel de resistencia 3 (intermedio)
-  myBreath.setMaxOut(127); // Nivel de resistencia 3 (intermedio)
-  breathBaseVal = myBreath.read(); // Set neutral breath pressure level
-  breathActiveThreshold = breathBaseVal + UMBRAL;
-  Menu.SetAutoOff(30);
-  Menu.alignTitle = CENTER;
-  Menu.alignItem = LEFT;
-  Menu.Root(Main, "Main");
-  cargar_preferencias();
-  modo = menu;
-  Menu.Message(String(NOMBRE) + "|Listo|By: Holman|2024", CENTER, MSG_TIME);
+
+  display.begin();                               // Inicializa la pantalla
+  Menu.Message(String(NOMBRE) + "|Iniciando|By: Holman|2024", CENTER, 1); // Muestra mensaje de inicio en pantalla
+
+  Wire.begin();                                  // Inicia la comunicación I2C para el sensor MPU6050
+  while(mpu.begin()) {}                          // Inicializa el sensor MPU6050
+  mpu.calcOffsets(true, true);                   // Calcula los offsets para el giroscopio y el acelerómetro
+
+  preferencias.begin("Hewi", false);             // Carga las preferencias de usuario en memoria
+  setNoteMap();                                  // Establece el mapeo de digitaciones a notas MIDI
+  initSynth(26, 25, 22);                         // Inicializa el sintetizador en los pines especificados
+  setMenuInstrumentos();                         // Configura el menú de selección de instrumentos
+
+  setFadeIn(10);                                 // Configura el tiempo de aumento gradual de volumen en las notas
+
+  myBreath.setResistance(1);                     // Configura el nivel de resistencia del sensor de soplido
+  myBreath.setMaxOut(127);                       // Configura el valor máximo de salida del sensor de soplido
+  breathBaseVal = myBreath.read();               // Establece el nivel de presión neutral del soplido
+  breathActiveThreshold = breathBaseVal + UMBRAL;// Calcula el umbral de activación del soplido
+
+  // Configuración del menú
+  Menu.SetAutoOff(30);                           // Establece el tiempo de apagado automático del menú en segundos
+  Menu.alignTitle = CENTER;                      // Alinea el título del menú al centro
+  Menu.alignItem = LEFT;                         // Alinea los elementos del menú a la izquierda
+  Menu.Root(Main, "Main");                       // Configura el menú raíz
+
+  cargar_preferencias();                         // Carga las preferencias de usuario almacenadas
+  modo = menu;                                   // Establece el modo inicial en "menu"
+  Menu.Message(String(NOMBRE) + "|Listo|By: Holman|2024", CENTER, MSG_TIME); // Mensaje de "Listo" en pantalla
 }
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+// Función principal (loop) del sistema, ejecuta el código en bucle, alternando entre el modo de menú y el modo de tocar
+
 void loop()
 {
-  if(modo == menu)  {  funcMenu(); }
-  else
+  if(modo == menu)                               // Si el modo actual es "menu"
+  {  
+    funcMenu();                                  // Ejecuta la función de menú
+  }
+  else                                           // Si el modo actual es "tocar"
   {
-    readBreath();
-    //programTime = Millis();
-    //if((programTime - prevProgramTime) > 2)
+    readBreath();                                // Lee el valor del sensor de soplido
+
+    readKeys();                                  // Lee el estado de las teclas capacitivas
+
+    if(activeBend)                               // Si el pitch bend está activado
     {
-      readKeys();
-      if(activeBend){mpu.update(); //if(mpu.getAccX()*100<50){canal=1;}else{canal=0;}}
-      float tiltX = mpu.getAccX()*-100;
-      int16_t  pitchOffset =(tiltX>-45)?map(tiltX, -45, 10, 1, 100):0; // Ajusta los valores según el rango que prefieras
-      alterPitchNota(canal, pitchOffset);
-    //  Serial.print("Inclinación X: "); Serial.print(tiltX); Serial.print(" | Pitch Offset: "); Serial.println(pitchOffset);
-      }
-      playNotes();
-      //prevProgramTime = programTime;
+      mpu.update();                              // Actualiza los valores del sensor MPU6050
+
+      // Calcula el ángulo de inclinación y ajusta el desplazamiento de tono (pitch offset) según el ángulo
+      float tiltX = mpu.getAccX() * -100;
+      int16_t pitchOffset = (tiltX > -45) ? map(tiltX, -45, 10, 1, 100) : 0;
+      alterPitchNota(canal, pitchOffset);        // Aplica el desplazamiento de tono a la nota en el canal actual
     }
+
+    playNotes();                                 // Ejecuta la función de reproducción de notas
   }
 }
