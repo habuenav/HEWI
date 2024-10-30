@@ -2,7 +2,7 @@
 
 HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrónico, diseñado para Makers y músicos y entuciastas que buscan explorar su potencial creativo, modificando, programando o personalizando un su propio EWI. Este proyecto esta basado en el microcontrolador ESP32 y para el se han implementado varias bibliotecas personalizadas puedes encontrar mas informacion en su pagina oficial <a href=https://sites.google.com/view/hewi-instrument>HEWI</a>.
 
-# Características
+## Características
 
 - **Control de Soplo:** Gracias a la biblioteca Breath se ha optimizado la lectura de muestras para ser usadas como sensor de soplo permitiendo configurar la resistencia y establecer valores de umbral y lectura maxima.
 - **Botones Capacitivos:** La libreria TouchButton gestiona eficazmente los pines capacitivos que se usan en la digitacion del instrumento.
@@ -10,9 +10,9 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 - **Interfaz de Menú:** Control fácil de las configuraciones del instrumento con la biblioteca simpleMenu.
 - **Conexion BLE-MIDI:** Conectividad Bluetooth MIDI para integrar con dispositivos externos
 
-# Requisitos
+## Requisitos
 
-## Hardware (Partes y modulos):
+### Hardware (Partes y modulos):
 - ESP32 (Modelo Wemos Lolin32 lite)
 - Sensor de presion MPS20N0040D-HX710B
 - Pantalla OLED 128x64 I2C
@@ -22,9 +22,8 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 - Sensor MPU-6050 (gy-521)
 - Bateria litio 3.7v
 
-# Software y librerias:
+## Software y librerias:
 - IDE de Arduino: Recomendado 1.8.10 o superior
-- 
   ### Librerias personalizadas
   - samplerSynth: Biblioteca de síntesis de sonido utilizada para generar las notas.
   - Breath: Biblioteca para gestionar la entrada del sensor de soplo
@@ -48,12 +47,11 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 - Conecta la salida de audifonos y el parlante al modulo DAC MAX98357.
 - Conecta las pines capacitivos a los contactos metalicos.
 
-# Configuración y Uso
+## Configuración y Uso
 
-## Opciones del Menu
+### Opciones del Menu
 
-- Modo Tocar: El modo de interpretación activa los sensores de soplido y los botones de digitación para generar notas.
-### Opciones del Menú:
+- Tocar: El modo de interpretación activa los sensores de soplido y los botones de digitación para generar notas.
 - Instrumentos: Cambia el sonido utilizando el menú de instrumentos.
 - Volumen: Ajusta el volumen del instrumento.
 - Efectos y Filtros: Aplica efectos como reverberación, chorus, y filtro paso bajo.
