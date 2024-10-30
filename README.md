@@ -1,6 +1,11 @@
+#### **[[ENGLISH]](#spanish)**
+
 # HEWI - Electronic Wind Instrument
 
 HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrónico, diseñado para Makers y músicos y entuciastas que buscan explorar su potencial creativo, modificando, programando o personalizando un su propio EWI. Este proyecto esta basado en el microcontrolador ESP32 y para el se han implementado varias bibliotecas personalizadas puedes encontrar mas informacion en su pagina oficial <a href=https://sites.google.com/view/hewi-instrument>HEWI</a>.
+<p align="center">
+<img width="25%" src='https://lh4.googleusercontent.com/ZkoYGO-eSKLqEy1nB9zwdqTdghIDMHbeLw1CD0P5RpZYlNqW0vYO3g-Z5Ea8EbSihKiuUVaxq3PQEg1w56euHh2oHA3o-ZUafanSNVh8NvEbfS3dre2CI6oFOWlf_wdQnA' title=''/>
+</p>
 
 ## Características
 
