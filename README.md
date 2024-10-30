@@ -4,12 +4,11 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 
 # Características
 
-**Control de Soplo:** Gracias a la biblioteca Breath se ha optimizado la lectura de muestras para ser usadas como sensor de soplo permitiendo configurar la resistencia y establecer valores de umbral y lectura maxima.
-**Teclas Capacitivas:** La libreria TouchButton gestiona eficazmente los pines capacitivos que se usan en la digitacion del instrumento.
-**Motor de Síntesis:** Utiliza samplerSynth para la generación de sonido.
-**Interfaz de Menú:** Control fácil de las configuraciones del instrumento con la biblioteca simpleMenu.
-**Conexion BLE-MIDI:** Conectividad Bluetooth MIDI para integrar con dispositivos externos
-
+- **Control de Soplo:** Gracias a la biblioteca Breath se ha optimizado la lectura de muestras para ser usadas como sensor de soplo permitiendo configurar la resistencia y establecer valores de umbral y lectura maxima.
+- **Botones Capacitivos:** La libreria TouchButton gestiona eficazmente los pines capacitivos que se usan en la digitacion del instrumento.
+- **Motor de Síntesis:** Utiliza samplerSynth para la generación de sonido.
+- **Interfaz de Menú:** Control fácil de las configuraciones del instrumento con la biblioteca simpleMenu.
+- **Conexion BLE-MIDI:** Conectividad Bluetooth MIDI para integrar con dispositivos externos
 
 # Requisitos
 
@@ -22,7 +21,6 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 - Altavoz 3W 4ohm
 - Sensor MPU-6050 (gy-521)
 - Bateria litio 3.7v
-- 
 
 # Software y librerias:
 - IDE de Arduino: Recomendado 1.8.10 o superior
@@ -43,30 +41,24 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 - Carcasa: En desarrollo(No disponible aun) Imprime la carcasa del instrumento usando los archivos STL incluidos (o puedes diseñar una propia).
 - Conexión de Componentes:
 
-Conecta el sensor de soplo MPS20N0040D a los pines del ESP32 (data out=5, clock=18).
-Conecta el sensor de movimiento MPU-6050  en los pines de comunicación I2C de la placa (sda=19,scl=23).
-Conecta la pantalla OLED I2C en los pines de comunicación I2C de la placa (sda=19,scl=23).
-Conecta el modulo DAC  MAX98357  a los pines  de comunicación I2S Seleccionados .
-Conecta la salida de audifonos y el parlante al modulo DAC MAX98357.
-Conecta las pines capacitivos () a los contactos metalicos.
+- Conecta el sensor de soplo MPS20N0040D a los pines del ESP32 (data out=5, clock=18).
+- Conecta el sensor de movimiento MPU-6050  en los pines de comunicación I2C de la placa (sda=19,scl=23).
+- Conecta la pantalla OLED I2C en los pines de comunicación I2C de la placa (sda=19,scl=23).
+- Conecta el modulo DAC  MAX98357  a los pines  de comunicación I2S Seleccionados .
+- Conecta la salida de audifonos y el parlante al modulo DAC MAX98357.
+- Conecta las pines capacitivos a los contactos metalicos.
 
 # Configuración y Uso
 
 ## Opciones del Menu
 
-Modo Tocar: El modo de interpretación activa los sensores de soplido y los botones de digitación para generar notas.
-Configuración del Menú:
-
-Instrumentos: Cambia el sonido utilizando el menú de instrumentos.
-
-Volumen: Ajusta el volumen del instrumento.
-
-Efectos y Filtros: Aplica efectos como reverberación, chorus, y filtro paso bajo.
-
-Transposición: Ajusta la afinación del instrumento en semitonos.
-
-Modo Acorde: Cambia el modo de acordes según la selección.
-
+- Modo Tocar: El modo de interpretación activa los sensores de soplido y los botones de digitación para generar notas.
+### Opciones del Menú:
+- Instrumentos: Cambia el sonido utilizando el menú de instrumentos.
+- Volumen: Ajusta el volumen del instrumento.
+- Efectos y Filtros: Aplica efectos como reverberación, chorus, y filtro paso bajo.
+- Transposición: Ajusta la afinación del instrumento en semitonos.
+- Modo Acorde: Cambia el modo de acordes según la selección.
 
 # Comunidad
 ¡Las contribuciones son bienvenidas! Si tienes sugerencias, encuentra un error o deseas agregar una nueva característica, por favor abre un issue o envía un pull request.
