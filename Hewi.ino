@@ -1,11 +1,11 @@
-#include <samplerSynth.h>       // Biblioteca para sintetizador de audio en el ESP32
-#include <MPU6050_light.h>       // Biblioteca para el sensor MPU6050 (giroscopio/acelerómetro)
-#include "Wire.h"                // Biblioteca para comunicación I2C
-#include <Breath.h>              // Biblioteca para manejar el sensor de soplo
-#include <BLEMidi.h>             // Biblioteca para MIDI a través de Bluetooth Low Energy
-#include <Preferences.h>         // Biblioteca para almacenar configuraciones de usuario en la memoria no volátil
-#include <sm.h>                  // Biblioteca personalizada para crear un menú simple
-#include <tb.h>                  // Biblioteca personalizada para el uso de pines táctiles capacitivos
+#include <Wire.h>                // Librería  para comunicación I2C
+#include <Preferences.h>         // Librería  para almacenar configuraciones de usuario en la memoria no volátil
+#include <samplerSynth.h>        // Librería para sintetizador de audio en el ESP32
+#include <Breath.h>              // Librería  para manejar el sensor de soplo
+#include <tb.h>                  // Librería  personalizada para el uso de pines táctiles capacitivos
+#include <sm.h>                  // Librería  personalizada para crear un menú simple
+#include <BLEMidi.h>             // Librería  para MIDI a través de Bluetooth Low Energy
+#include <MPU6050_light.h>       // Librería  para el sensor MPU6050 (giroscopio/acelerómetro)
 //---------------------------------------------------------------------------------------------------------------------------------------------
 // Configuración inicial de constantes y macros
 #define LIBRARY 0                // Define si se usa U8g2lib (0) o Adafruit_GFX (1) para el display
