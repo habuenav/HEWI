@@ -36,16 +36,16 @@ Estas son las partes y modulos que debes conseguir si quieres armar tu mismo el 
 
 ## Software y librerias:
 - IDE de Arduino: Recomendado 1.8.10 o superior
-  ### Librerias personalizadas
-  - samplerSynth: Biblioteca de síntesis de sonido utilizada para generar las notas.
-  - Breath: Biblioteca para gestionar la entrada del sensor de soplo
-  - TouchButton: Biblioteca para manejar los sensores capacitivos de digitación.
-  - simpleMenu: Biblioteca para manejar los menús de configuración.
+  ### Librerias propias
+  - <a href="https://github.com/habuenav/samplerSynth">samplerSynth</a>: Síntesis de sonido, gestion de las notas y efectos.
+  - <a href="https://github.com/habuenav/Breath">Breath</a>: Gestionar la entrada del sensor de soplo
+  - <a href="https://github.com/habuenav/TouchButton">TouchButton</a>: Gestion de los sensores capacitivos.
+  - <a href="https://github.com/habuenav/simpleMenu">simpleMenu</a>: Creacion y gestion de menús de configuración.
  
-  ### librerias de terceros
-  - Ble-Midi
-  - Preferences
-  - Mpu-6050-light
+  ### Librerias de terceros
+  - <a href="https://github.com/max22-/ESP32-BLE-MIDI">ESP32-BLE-MIDI</a>: Librería para usar Midi sobre Bluetooth Low Energy (BLE) en placas ESP32.
+  - Preferences :  Libreria para guardar datos en la memoria flash incluida con la instalacion de soporte ESP32 en el ide Arduino
+  - <a href="https://github.com/rfetick/MPU6050_light">Mpu-6050-light</a>: Libreria diseñada para obtener mediciones del acelerómetro y del giroscopio del MPU6050 (gy-521)
 
 ## Montaje
 
