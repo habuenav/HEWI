@@ -68,9 +68,84 @@ Para la conexion de componentes puedes guiarte del siguiente esquema
 - Transposición: Ajusta la afinación del instrumento en semitonos.
 - Modo Acorde: Cambia el modo de acordes según la selección.
 
-# Comunidad
+## Comunidad
 ¡Las contribuciones son bienvenidas! Si tienes sugerencias, encuentra un error o deseas agregar una nueva característica, por favor abre un issue o envía un pull request.
+## Donaciones
+Si te gusto este proyecto o simplemente te sientes generoso, considera invitarme una cerveza. ¡Salud! :beers:<br/>
+<a href="https://www.paypal.com/donate/?business=T8UBSMVJ2QT9Y&no_recurring=0&item_name=%C2%A1Gracias+por+tu+apoyo%21%0ATu+donaci%C3%B3n+es+de+gran+ayuda+y+es+un+incentivo+para+seguir+mejorando.&currency_code=USD"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/latam/mx/accept-payments-online/icons/img_btn-donate2x.png" height="80"></a><br/>
+Si has realizado una donación, por favor escribeme un correo y te enviare una version ligeramente optimizada y totalmente comentada, ademas de recibir rápidamente cualquier actualización o mejora adicional que haga a la librería. ¡Tu apoyo es invaluable!
 
-# Donaciones
-Si te gusto este proyecto o simplemente te sientes generoso, considera invitarme una cerveza. ¡Salud! 🍻
-¡Tu apoyo es invaluable!
+#### **[[SPANISH]](#english)** 
+
+# HEWI - Electronic Wind Instrument
+HEWI (Holman's Electronic Wind Instrument) It is an electronic wind instrument, created for makers, musicians and enthusiasts who are looking to explore their creative potential, modifying, programming or customizing their own EWI. This instrument is based on the lolin32 lite board and for it I have implemented several custom libraries you can find here.
+More information at<a href=https://sites.google.com/view/hewi-instrument>HEWI</a>.
+<p align="center">
+<img width="15%" src="https://i.ibb.co/K9cwmTc/media.png" alt="media" border="0">
+</p>
+
+## Features
+- **Breath Control:** The Breath library has optimized sample reading for use as a breath sensor, allowing resistance to be configured and threshold and maximum reading values ​​to be set.
+- **Capacitive Buttons:** The TouchButton library efficiently manages the capacitive pins used in the instrument's fingering.
+- **Synthesis Engine:** Uses samplerSynth for sound generation.
+- **Menu Interface:** Easy control of instrument settings with the simpleMenu library.
+- **BLE-MIDI Connection:** Bluetooth MIDI connectivity for integration with external devices
+
+## Requirements
+### Hardware (Parts and modules):
+These are the parts and modules that you must get if you want to build the HEWI project yourself. The kit that comes with everything necessary to assemble it and with a more professional finish will be available soon.
+| Part | Image |
+|--------------|---|
+| ESP32 (Modelo Wemos Lolin32 lite) |<p align="center"> <img  width="50%" src="https://i.ibb.co/n3dQx84/lolin32.jpg" alt="lolin32" border="0"> </p>|
+| Sensor de presion MPS20N0040D-HX710B | <p align="center"> <img width="40%" src="https://i.ibb.co/2jp6Q5j/hx710b.jpg" alt="hx710b" border="0"></a></p>|
+| Pantalla OLED 128x64 I2C |<p align="center"> <img  width="40%" src="https://i.ibb.co/4RZXHvp/ssd1306.jpg" alt="ssd1306" border="0"> </p> |
+| DAC MAX98357A (Actualmente) | <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
+| Conector Audifonos | <p align="center"> <img width="40%" src="https://i.ibb.co/C7YdgVt/jack3-5.jpg" alt="jack3-5" border="0"> </p> |
+| Altavoz 3W 4ohm | <p align="center"> <img width="40%" src="https://i.ibb.co/x3Ct0g7/speaker3w.jpg" alt="speaker3w" border="0"></p> |
+| Sensor MPU-6050 (gy-521) | <p align="center"> <img width="40%" src="https://i.ibb.co/fXpvR2H/mpu6050.jpg" alt="mpu6050" border="0"></p>  |
+| Bateria litio 3.7v 400mAh o mas |  <p align="center"> <img width="40%" src="https://i.ibb.co/0K75nGB/bateria3-7.jpg" alt="bateria3-7" border="0"></p>  |
+| 40cm tubo silicona 3mm-4mm|  <p align="center"> <img width="40%" src="https://i.ibb.co/dDjdCkg/tubosilicona.jpg" alt="tubosilicona" border="0"></p> |
+| Chinchetas o tachuelas |  <p align="center"> <img width="40%" src="https://i.ibb.co/VDx5L7B/tachuelas.jpg" alt="tachuelas" border="0"></p> |
+| Baquelita perforada o universal |  <p align="center"> <img width="40%" src="https://i.ibb.co/6JRVJdn/baquelita.jpg" alt="baquelita" border="0"></p> |
+ 
+
+## Software and libraries:
+- Arduino IDE: Recommended 1.8.10 or higher
+
+### Own libraries 
+- <a href="https://github.com/habuenav/samplerSynth">samplerSynth</a>: Sound synthesis, note management and effects.
+- <a href="https://github.com/habuenav/Breath">Breath</a>: Manage breath sensor input.
+- <a href="https://github.com/habuenav/TouchButton" >TouchButton</a>: Management of capacitive sensors.
+- <a href="https://github.com/habuenav/simpleMenu">simpleMenu</a>: Creation and management of configuration menus.
+ 
+### Third-party libraries
+- <a href="https://github.com/max22-/ESP32-BLE-MIDI">ESP32-BLE-MIDI</a>: Library to use MIDI over Bluetooth Low Energy (BLE) on ESP32 boards.
+- Preferences : Library to save data in the flash memory included with the ESP32 support installation in the Arduino IDE
+- <a href="https://github.com/rfetick/MPU6050_light">Mpu-6050-light</a>: Library designed to obtain measurements from the accelerometer and gyroscope of the MPU6050 (gy-521)
+
+## Assembly
+
+- Housing: In development (Not available yet) Print the instrument housing using the included STL files (or you can design your own), you can also be creative and use a gutter section of at least these dimensions (40mm Width x 25mm Height x 250mm Length)
+- Mouthpiece: In development (Not available yet) Print the instrument mouthpiece using the included STL files (or you can design your own), or you can use a mouthpiece recovered from a Vapper and adapt it as I did with my first prototype.<br>
+<img width="12%" src="https://i.ibb.co/g92fLJ6/canaleta.jpg" alt="canaleta" border="0"> <img width="12%" src="https://i.ibb.co/10pQjtg/boquillavaper.jpg" alt="boquillavaper" border="0"></a> the silicone tube or hose goes from the mouthpiece to the puff sensor and another part goes from the mouthpiece to the lower end of the instrument as an air and saliva outlet.
+
+### Connecting Components:
+For connecting components you can use the following diagram as a guide
+
+## Configuration and Use
+
+
+### Menu Options
+- Play: Performance mode activates the breath sensors and finger buttons to generate notes.
+- Instruments: Change the sound using the instrument menu.
+- Volume: Adjust the volume of the instrument.
+- Effects & Filters: Apply effects such as reverb, chorus, and low-pass filter.
+- Transpose: Adjust the pitch of the instrument in semitones.
+- Chord Mode: Change the chord mode based on the selection.
+
+## Community
+Contributions are welcome! If you have suggestions, find a bug, or want to add a new feature, please open an issue or submit a pull request.
+## Donations
+If you liked this project or are just feeling generous, consider buying me a beer. Health! :beers:<br/>
+<a href="https://www.paypal.com/donate/?business=T8UBSMVJ2QT9Y&no_recurring=0&item_name=%C2%A1Gracias+por+tu+apoyo%21%0ATu+donaci%C3%B3n+es+de+gran+ayuda+y+es+un+incentivo+para+seguir+mejorando.&currency_code=USD"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/latam/mx/accept-payments-online/icons/img_btn-donate2x.png" height="80"></a><br/>
+If you have made a donation, please write me an email and I will send you a slightly optimized and fully commented version, in addition to quickly receiving any additional updates or improvements I make to the library. Your support is invaluable!
