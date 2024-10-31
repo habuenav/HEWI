@@ -21,9 +21,9 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 | Parte | Imagen |
 |--------------|---|
 | ESP32 (Modelo Wemos Lolin32 lite) |<p align="center"> <img  width="50%" src="https://i.ibb.co/n3dQx84/lolin32.jpg" alt="lolin32" border="0"> </p>|
-| Sensor de presion MPS20N0040D-HX710B |   |
+| Sensor de presion MPS20N0040D-HX710B | <p align="center"> <img width="40%" src="https://i.ibb.co/2jp6Q5j/hx710b.jpg" alt="hx710b" border="0"></a></p>|
 | Pantalla OLED 128x64 I2C |<p align="center"> <img  width="40%" src="https://i.ibb.co/4RZXHvp/ssd1306.jpg" alt="ssd1306" border="0"> </p> |
-| DAC MAX98357A (Actualmente) |   |
+| DAC MAX98357A (Actualmente) |  <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
 | Conector Audifonos |   |
 | Altavoz 3W 4ohm |   |
 | Sensor MPU-6050 (gy-521) |   |
