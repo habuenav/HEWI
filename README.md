@@ -5,7 +5,7 @@
 HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrónico, creado para makers, músicos y entuciastas que buscan explorar su potencial creativo, modificando, programando o personalizando tu propio EWI. Este instrumento esta basado en la placa lolin32 lite y para el he implementado varias librerias personalizadas puedes encontrar aqui. 
 Mas informacion en <a href=https://sites.google.com/view/hewi-instrument>HEWI</a>.
 <p align="center">
-<img width="15%" src="https://i.ibb.co/0qbKgFJ/media-1.png" border="0">
+<img width="15%" src="https://i.ibb.co/K9cwmTc/media.png" alt="media" border="0">
 </p>
 
 ## Características
