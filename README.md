@@ -48,8 +48,11 @@ Estas son las partes y modulos que debes conseguir si quieres armar tu mismo el 
   - <a href="https://github.com/rfetick/MPU6050_light">Mpu-6050-light</a>: Libreria diseñada para obtener mediciones del acelerómetro y del giroscopio del MPU6050 (gy-521)
 
 ## Montaje
-- Carcasa: En desarrollo (No disponible aun) Imprime la carcasa del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), tambien puedes ser creativo y usar una seccion de canaleta de almenos estas dimenciones (40mm Ancho x 25mm Alto x 250mm Largo) 
-- Boquilla: En desarrollo (No disponible aun) Imprime la boquilla del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), o puedes usar una boquilla recuperada de un Vapper y adaptarla tal como hice con mi primer prototipo, el tubo o manguera de silicona va de la boquilla al sensor de soplo y otra parte va de la boquilla al extremo inferior del instrumento como salida de aire y saliva.
+
+
+- Carcasa: En desarrollo (No disponible aun) Imprime la carcasa del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), tambien puedes ser creativo y usar una seccion de canaleta de almenos estas dimenciones (40mm Ancho x 25mm Alto x 250mm Largo)
+- Boquilla: En desarrollo (No disponible aun) Imprime la boquilla del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), o puedes usar una boquilla recuperada de un Vapper y adaptarla tal como hice con mi primer prototipo.<br>
+<img width="12%" src="https://i.ibb.co/g92fLJ6/canaleta.jpg" alt="canaleta" border="0"> <img width="12%" src="https://i.ibb.co/10pQjtg/boquillavaper.jpg" alt="boquillavaper" border="0"></a> el tubo o manguera de silicona va de la boquilla al sensor de soplo y otra parte va de la boquilla al extremo inferior del instrumento como salida de aire y saliva.
 
 ### Conexión de Componentes:
 Para la conexion de componentes puedes guiarte del siguiente esquema
