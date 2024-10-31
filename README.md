@@ -17,17 +17,21 @@ HEWI (Holman's Electronic Wind Instrument) Es un instrumento de viento electrón
 
 ## Requisitos
 ### Hardware (Partes y modulos):
+Estas son las partes y modulos que debes conseguir si quieres armar tu mismo el proyecto HEWI. Proximamente estara disponible el kit que viene con todo lo neceario para enamblarlo y con un acabado mas profesional
 
 | Parte | Imagen |
 |--------------|---|
 | ESP32 (Modelo Wemos Lolin32 lite) |<p align="center"> <img  width="50%" src="https://i.ibb.co/n3dQx84/lolin32.jpg" alt="lolin32" border="0"> </p>|
 | Sensor de presion MPS20N0040D-HX710B | <p align="center"> <img width="40%" src="https://i.ibb.co/2jp6Q5j/hx710b.jpg" alt="hx710b" border="0"></a></p>|
 | Pantalla OLED 128x64 I2C |<p align="center"> <img  width="40%" src="https://i.ibb.co/4RZXHvp/ssd1306.jpg" alt="ssd1306" border="0"> </p> |
-| DAC MAX98357A (Actualmente) |  <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
-| Conector Audifonos |   |
-| Altavoz 3W 4ohm |   |
-| Sensor MPU-6050 (gy-521) |   |
-| Bateria litio 3.7v |   |
+| DAC MAX98357A (Actualmente) | <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
+| Conector Audifonos | <p align="center"> <img width="40%" src="https://i.ibb.co/C7YdgVt/jack3-5.jpg" alt="jack3-5" border="0"> </p> |
+| Altavoz 3W 4ohm | <p align="center"> <img width="40%" src="https://i.ibb.co/x3Ct0g7/speaker3w.jpg" alt="speaker3w" border="0"></p> |
+| Sensor MPU-6050 (gy-521) | <p align="center"> <img width="40%" src="https://i.ibb.co/fXpvR2H/mpu6050.jpg" alt="mpu6050" border="0"></p>  |
+| Bateria litio 3.7v |  <p align="center"> <img width="40%" src="https://i.ibb.co/0K75nGB/bateria3-7.jpg" alt="bateria3-7" border="0"></p>  |
+| 40cm tubo silicona 3mm-4mm|  <p align="center"> <img width="40%" src="https://i.ibb.co/dDjdCkg/tubosilicona.jpg" alt="tubosilicona" border="0"></p> |
+| Chinchetas o tachuelas |  <p align="center"> <img width="40%" src="https://i.ibb.co/VDx5L7B/tachuelas.jpg" alt="tachuelas" border="0"></p> |
+
 
 ## Software y librerias:
 - IDE de Arduino: Recomendado 1.8.10 o superior
