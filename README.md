@@ -48,14 +48,13 @@ Estas son las partes y modulos que debes conseguir si quieres armar tu mismo el 
   - <a href="https://github.com/rfetick/MPU6050_light">Mpu-6050-light</a>: Libreria diseñada para obtener mediciones del acelerómetro y del giroscopio del MPU6050 (gy-521)
 
 ## Montaje
-
-
 - Carcasa: En desarrollo (No disponible aun) Imprime la carcasa del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), tambien puedes ser creativo y usar una seccion de canaleta de almenos estas dimenciones (40mm Ancho x 25mm Alto x 250mm Largo)
 - Boquilla: En desarrollo (No disponible aun) Imprime la boquilla del instrumento usando los archivos STL incluidos (o puedes diseñar una propia), o puedes usar una boquilla recuperada de un Vapper y adaptarla tal como hice con mi primer prototipo.<br>
 <img width="12%" src="https://i.ibb.co/g92fLJ6/canaleta.jpg" alt="canaleta" border="0"> <img width="12%" src="https://i.ibb.co/10pQjtg/boquillavaper.jpg" alt="boquillavaper" border="0"></a> el tubo o manguera de silicona va de la boquilla al sensor de soplo y otra parte va de la boquilla al extremo inferior del instrumento como salida de aire y saliva.
 
 ### Conexión de Componentes:
-Para la conexion de componentes puedes guiarte del siguiente esquema
+Para la conexion de componentes puedes guiarte del siguiente esquema, la baquelita perforada esta como referencia para ubicar los componentes en ella, la conexion de los cables queda a tu gusto, se que los ubicaras de la mejor manera.
+<p align="center"> <img src="https://i.ibb.co/CQgwBSx/esquema-HEWI.png" alt="esquema-HEWI" border="0"> </p>
 
 ## Configuración y Uso
 
@@ -130,7 +129,8 @@ These are the parts and modules that you must get if you want to build the HEWI 
 <img width="12%" src="https://i.ibb.co/g92fLJ6/canaleta.jpg" alt="canaleta" border="0"> <img width="12%" src="https://i.ibb.co/10pQjtg/boquillavaper.jpg" alt="boquillavaper" border="0"></a> the silicone tube or hose goes from the mouthpiece to the puff sensor and another part goes from the mouthpiece to the lower end of the instrument as an air and saliva outlet.
 
 ### Connecting Components:
-For connecting components you can use the following diagram as a guide
+For the connection of components you can use the following diagram as a guide. The perforated bakelite is used as a reference to locate the components on it. The connection of the cables is up to you, I know that you will locate them in the best way.
+<p align="center"> <img src="https://i.ibb.co/CQgwBSx/esquema-HEWI.png" alt="esquema-HEWI" border="0"> </p>
 
 ## Configuration and Use
 
