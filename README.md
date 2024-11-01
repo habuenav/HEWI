@@ -96,17 +96,17 @@ More information at<a href=https://sites.google.com/view/hewi-instrument>HEWI</a
 These are the parts and modules that you must get if you want to build the HEWI project yourself. The kit that comes with everything necessary to assemble it and with a more professional finish will be available soon.
 | Part | Image |
 |--------------|---|
-| ESP32 (Modelo Wemos Lolin32 lite) |<p align="center"> <img  width="50%" src="https://i.ibb.co/n3dQx84/lolin32.jpg" alt="lolin32" border="0"> </p>|
-| Sensor de presion MPS20N0040D-HX710B | <p align="center"> <img width="40%" src="https://i.ibb.co/2jp6Q5j/hx710b.jpg" alt="hx710b" border="0"></a></p>|
-| Pantalla OLED 128x64 I2C |<p align="center"> <img  width="40%" src="https://i.ibb.co/4RZXHvp/ssd1306.jpg" alt="ssd1306" border="0"> </p> |
-| DAC MAX98357A (Actualmente) | <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
-| Conector Audifonos | <p align="center"> <img width="40%" src="https://i.ibb.co/C7YdgVt/jack3-5.jpg" alt="jack3-5" border="0"> </p> |
-| Altavoz 3W 4ohm | <p align="center"> <img width="40%" src="https://i.ibb.co/x3Ct0g7/speaker3w.jpg" alt="speaker3w" border="0"></p> |
-| Sensor MPU-6050 (gy-521) | <p align="center"> <img width="40%" src="https://i.ibb.co/fXpvR2H/mpu6050.jpg" alt="mpu6050" border="0"></p>  |
-| Bateria litio 3.7v 400mAh o mas |  <p align="center"> <img width="40%" src="https://i.ibb.co/0K75nGB/bateria3-7.jpg" alt="bateria3-7" border="0"></p>  |
-| 40cm tubo silicona 3mm-4mm|  <p align="center"> <img width="40%" src="https://i.ibb.co/dDjdCkg/tubosilicona.jpg" alt="tubosilicona" border="0"></p> |
-| Chinchetas o tachuelas |  <p align="center"> <img width="40%" src="https://i.ibb.co/VDx5L7B/tachuelas.jpg" alt="tachuelas" border="0"></p> |
-| Baquelita perforada o universal |  <p align="center"> <img width="40%" src="https://i.ibb.co/6JRVJdn/baquelita.jpg" alt="baquelita" border="0"></p> |
+| ESP32 (Wemos Lolin32 lite Model) |<p align="center"> <img width="50%" src="https://i.ibb.co/n3dQx84/lolin32.jpg" alt="lolin32" border= "0"> </p>|
+| Pressure sensor MPS20N0040D-HX710B | <p align="center"> <img width="40%" src="https://i.ibb.co/2jp6Q5j/hx710b.jpg" alt="hx710b" border="0"></a> </p>|
+| 128x64 I2C OLED display |<p align="center"> <img width="40%" src="https://i.ibb.co/4RZXHvp/ssd1306.jpg" alt="ssd1306" border="0" > </p> |
+| DAC MAX98357A (Currently) | <p align="center"> <img width="40%" src="https://i.ibb.co/kMWgXYL/max98357a.jpg" alt="max98357a" border="0"> </p> |
+| Headphone Connector | <p align="center"> <img width="40%" src="https://i.ibb.co/C7YdgVt/jack3-5.jpg" alt="jack3-5" border="0"> </p> |
+| Speaker 3W 4ohm | <p align="center"> <img width="40%" src="https://i.ibb.co/x3Ct0g7/speaker3w.jpg" alt="speaker3w" border="0"></p> |
+| Sensor MPU-6050 (gy-521) | <p align="center"> <img width="40%" src="https://i.ibb.co/fXpvR2H/mpu6050.jpg" alt="mpu6050" border="0"></p> |
+| Lithium battery 3.7v 400mAh or more | <p align="center"> <img width="40%" src="https://i.ibb.co/0K75nGB/bateria3-7.jpg" alt="bateria3-7" border="0"> </p> |
+| 40cm silicone tube 3mm-4mm| <p align="center"> <img width="40%" src="https://i.ibb.co/dDjdCkg/tubosilicona.jpg" alt="tubosilicona" border="0"></p> |
+| Thumbtacks or thumbtacks | <p align="center"> <img width="40%" src="https://i.ibb.co/VDx5L7B/tachuelas.jpg" alt="tachuelas" border="0"></p> |
+| Perforated or universal bakelite | <p align="center"> <img width="40%" src="https://i.ibb.co/6JRVJdn/baquelita.jpg" alt="baquelita" border="0"></p> |
  
 
 ## Software and libraries:
